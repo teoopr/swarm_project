@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>stage_multi_slam</name>
+  <version>0.0.1</version>
+  <description>Pokretanje Stagea, Slam toolboxa i multirobot_map_mergea</description>
+
+  <maintainer email="teo.swarm.project@proton.me">Teo</maintainer>
+  <license>MIT</license>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>slam_toolbox</exec_depend>
+  <exec_depend>multirobot_map_merge</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

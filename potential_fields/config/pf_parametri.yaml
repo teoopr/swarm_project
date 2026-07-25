@@ -1,0 +1,44 @@
+/**:
+  ros__parameters:
+    use_sim_time: true
+
+    k_att: 1.00
+    k_rep: 0.20
+    rep_udaljenost: 1.2
+    k_v: 0.25
+    k_w: 1.0
+    v_max: 0.5
+    w_max: 1.0
+    cilj_tolerancija: 0.25
+    korak_zrake: 4
+    ucestalost: 10.0
+
+    robot0_ukljuceno: true
+    robot1_ukljuceno: true
+    robot2_ukljuceno: true
+    robot3_ukljuceno: true
+
+    robot0_spawn_x: 18.0
+    robot0_spawn_y: 6.0
+    robot0_spawn_yaw: 3.141593
+
+    robot1_spawn_x: 18.5
+    robot1_spawn_y: 6.5
+    robot1_spawn_yaw: 3.141593
+
+    robot2_spawn_x: 18.5
+    robot2_spawn_y: 5.5
+    robot2_spawn_yaw: 3.141593
+
+    robot3_spawn_x: 19
+    robot3_spawn_y: 6.0
+    robot3_spawn_yaw: 3.141593
+
+    robot1_offset_x: -0.5
+    robot1_offset_y: 0.5
+
+    robot2_offset_x: -0.5
+    robot2_offset_y: -0.5
+
+    robot3_offset_x: -1.0
+    robot3_offset_y: 0.0

@@ -1,0 +1,40 @@
+map_merge:
+  ros__parameters:
+    use_sim_time: true
+
+    known_init_poses: true
+    expand_slam_maps_to_common_canvas: true
+    expand_slam_maps_margin_m: 1.0
+    expand_slam_maps_apply_init_pose: true
+
+    merging_rate: 4.0
+    discovery_rate: 0.5
+    estimation_rate: 0.5
+    estimation_confidence: 0.6
+
+    robot_map_topic: map
+    robot_map_updates_topic: map_updates
+    robot_namespace: ""
+    merged_map_topic: map
+
+    world_frame: world
+
+    /robot_0/map_merge/init_pose_x: 0.0
+    /robot_0/map_merge/init_pose_y: 0.0
+    /robot_0/map_merge/init_pose_z: 0.0
+    /robot_0/map_merge/init_pose_yaw: 0.0
+
+    /robot_1/map_merge/init_pose_x: -34.0
+    /robot_1/map_merge/init_pose_y: -13.0
+    /robot_1/map_merge/init_pose_z: 0.0
+    /robot_1/map_merge/init_pose_yaw: 0.0
+
+    /robot_2/map_merge/init_pose_x: -18.0
+    /robot_2/map_merge/init_pose_y: 2.0
+    /robot_2/map_merge/init_pose_z: 0.0
+    /robot_2/map_merge/init_pose_yaw: 0.0
+
+    /robot_3/map_merge/init_pose_x: -19.5
+    /robot_3/map_merge/init_pose_y: -13.0
+    /robot_3/map_merge/init_pose_z: 0.0
+    /robot_3/map_merge/init_pose_yaw: 0.0
