@@ -43,7 +43,7 @@ def generate_launch_description():
     return LaunchDescription([
         *first_pair,
         TimerAction(
-            period=20.0,
+            period=35.0,
             actions=second_pair
         ),
     ])

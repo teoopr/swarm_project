@@ -7,8 +7,7 @@ setup(
     version='0.0.1',
     packages=['potential_fields'],
     data_files=[
-        ('share/ament_index/resource_index/packages',
-            ['resource/' + 'potential_fields']),
+        ('share/ament_index/resource_index/packages', ['resource/' + 'potential_fields']),
         ('share/' + 'potential_fields', ['package.xml']),
         (os.path.join('share', 'potential_fields', 'launch'), glob('launch/*.py')),
         (os.path.join('share', 'potential_fields', 'maps'), glob('maps/*')),
@@ -24,7 +23,11 @@ setup(
     entry_points={
         'console_scripts': [
             'pf_controller = potential_fields.pf_controller:main',
-            'pf_prikaz_pub = potential_fields.pf_prikaz_pub:main'
+            'pf_prikaz_pub = potential_fields.pf_prikaz_pub:main',
+            'noisy_odom_node = potential_fields.noisy_odom_node:main',
+            'localization_evaluator = potential_fields.localization_evaluator:main',
+            'imu_sim_node = potential_fields.imu_sim_node:main',
+            'navigation_evaluator = potential_fields.navigation_evaluator:main',
         ],
     },
 )

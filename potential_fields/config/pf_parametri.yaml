@@ -1,15 +1,42 @@
 /**:
   ros__parameters:
-    use_sim_time: true
+    formacija: romb
 
-    k_att: 1.00
-    k_rep: 0.20
+    scan_topic: base_scan
+    cilj_topic: /goal_pose
+    leader_cilj_aktivno_topic: /leader/cilj_aktivno
+    global_frame: map
+    leader_base_frame: robot_0/base_link
+    uski_prostor_topic: /leader/uski_prostor
+
+    detekcija_uski_prostor: true
+    sirina_uski_prostor_ulaz: 2.2
+    sirina_uski_prostor_izlaz: 2.8
+    uski_prostor_maks_domet: 3.5
+    uski_prostor_lijevo_kut_min_deg: 70.0
+    uski_prostor_lijevo_kut_max_deg: 110.0
+    uski_prostor_desno_kut_min_deg: -110.0
+    uski_prostor_desno_kut_max_deg: -70.0
+    uski_prostor_min_ocitanja_po_strani: 3
+
+    k_att: 0.80
+    k_rep: 0.55
     rep_udaljenost: 1.2
     k_v: 0.25
     k_w: 1.0
     v_max: 0.5
     w_max: 1.0
     cilj_tolerancija: 0.25
+
+    follower_k_att: 2.0
+    follower_k_rep: 0.15
+    follower_rep_udaljenost: 0.90
+    follower_k_v: 0.45
+    follower_k_w: 1.8
+    follower_v_max: 0.8
+    follower_w_max: 1.6
+    follower_cilj_tolerancija: 0.08
+
     korak_zrake: 4
     ucestalost: 10.0
 
@@ -18,27 +45,102 @@
     robot2_ukljuceno: true
     robot3_ukljuceno: true
 
-    robot0_spawn_x: 18.0
-    robot0_spawn_y: 6.0
+    robot0_spawn_x: 16.0
+    robot0_spawn_y: 7.0
     robot0_spawn_yaw: 3.141593
 
-    robot1_spawn_x: 18.5
-    robot1_spawn_y: 6.5
+    robot1_spawn_x: 17.0
+    robot1_spawn_y: 8.0
     robot1_spawn_yaw: 3.141593
 
-    robot2_spawn_x: 18.5
-    robot2_spawn_y: 5.5
+    robot2_spawn_x: 17.0
+    robot2_spawn_y: 6.0
     robot2_spawn_yaw: 3.141593
 
-    robot3_spawn_x: 19
-    robot3_spawn_y: 6.0
+    robot3_spawn_x: 18.0
+    robot3_spawn_y: 7.0
     robot3_spawn_yaw: 3.141593
 
-    robot1_offset_x: -0.5
-    robot1_offset_y: 0.5
+    robot1_offset_x: -1.0
+    robot1_offset_y: -1.0
 
-    robot2_offset_x: -0.5
-    robot2_offset_y: -0.5
+    robot2_offset_x: -1.0
+    robot2_offset_y: 1.0
 
-    robot3_offset_x: -1.0
+    robot3_offset_x: -2.0
     robot3_offset_y: 0.0
+
+    romb_robot0_spawn_x: 16.0
+    romb_robot0_spawn_y: 7.0
+    romb_robot0_spawn_yaw: 3.141593
+
+    romb_robot1_spawn_x: 17.0
+    romb_robot1_spawn_y: 8.0
+    romb_robot1_spawn_yaw: 3.141593
+
+    romb_robot2_spawn_x: 17.0
+    romb_robot2_spawn_y: 6.0
+    romb_robot2_spawn_yaw: 3.141593
+
+    romb_robot3_spawn_x: 18.0
+    romb_robot3_spawn_y: 7.0
+    romb_robot3_spawn_yaw: 3.141593
+
+    romb_robot1_offset_x: -1.0
+    romb_robot1_offset_y: -1.0
+
+    romb_robot2_offset_x: -1.0
+    romb_robot2_offset_y: 1.0
+
+    romb_robot3_offset_x: -2.0
+    romb_robot3_offset_y: 0.0
+
+    kvadrat_robot0_spawn_x: 16.0
+    kvadrat_robot0_spawn_y: 7.0
+    kvadrat_robot0_spawn_yaw: 3.141593
+
+    kvadrat_robot1_spawn_x: 16.0
+    kvadrat_robot1_spawn_y: 8.0
+    kvadrat_robot1_spawn_yaw: 3.141593
+
+    kvadrat_robot2_spawn_x: 17.0
+    kvadrat_robot2_spawn_y: 7.0
+    kvadrat_robot2_spawn_yaw: 3.141593
+
+    kvadrat_robot3_spawn_x: 17.0
+    kvadrat_robot3_spawn_y: 8.0
+    kvadrat_robot3_spawn_yaw: 3.141593
+
+    kvadrat_robot1_offset_x: 0.0
+    kvadrat_robot1_offset_y: -1.0
+
+    kvadrat_robot2_offset_x: -1.0
+    kvadrat_robot2_offset_y: 0.0
+
+    kvadrat_robot3_offset_x: -1.0
+    kvadrat_robot3_offset_y: -1.0
+
+    linija_robot0_spawn_x: 15.0
+    linija_robot0_spawn_y: 7.0
+    linija_robot0_spawn_yaw: 3.141593
+
+    linija_robot1_spawn_x: 16.0
+    linija_robot1_spawn_y: 7.0
+    linija_robot1_spawn_yaw: 3.141593
+
+    linija_robot2_spawn_x: 17.0
+    linija_robot2_spawn_y: 7.0
+    linija_robot2_spawn_yaw: 3.141593
+
+    linija_robot3_spawn_x: 18.0
+    linija_robot3_spawn_y: 7.0
+    linija_robot3_spawn_yaw: 3.141593
+
+    linija_robot1_offset_x: -1.0
+    linija_robot1_offset_y: 0.0
+
+    linija_robot2_offset_x: -2.0
+    linija_robot2_offset_y: 0.0
+
+    linija_robot3_offset_x: -3.0
+    linija_robot3_offset_y: 0.0
